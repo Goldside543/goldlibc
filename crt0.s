@@ -5,7 +5,7 @@
 .globl _start
 
 _start: # _start is the entry point known to the linker
-    xor %ebp, %ebp            # RBP := 0, because we like tidy stack frames
+    xor %ebp, %ebp            # EBP := 0, because we like tidy stack frames
     movl (%esp), %eax          # Get argc from the stack
     lea 4(%esp), %ecx         # Get the address of argv
     lea 4(%ecx,%eax,4), %edx  # Get the address of envp
