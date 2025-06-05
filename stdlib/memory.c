@@ -9,6 +9,8 @@
  */
 
 #include <string.h>
+#include <stddef.h>
+#include <stdint.h>
 
 #define MEMORY_POOL_SIZE (1024 * 1024 * 128)
 #define ALIGNMENT 8
