@@ -4,7 +4,7 @@
  * 
  * Memory related functions.
  *
- * Copyright (C) 2024 Goldside543
+ * Copyright (C) 2025 Goldside543
  *
  */
 
