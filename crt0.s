@@ -11,6 +11,8 @@ _start: # _start is the entry point known to the linker
     lea 4(%ecx,%eax,4), %edx  # Get the address of envp
     xor %ebx, %ebx            # Clear EBX because it's polite, and also ABI-compliant
 
+    call init_heap            # Initialize the heap
+
     pushl %edx                 # Push envp
     pushl %ecx                 # Push argv
     pushl %eax                 # Push argc
