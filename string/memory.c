@@ -8,6 +8,9 @@
  *
  */
 
+#include <stddef.h>
+#include <stdint.h>
+
 void* memset(void* ptr, int value, size_t num) {
     unsigned char* p = (unsigned char*)ptr;
     while (num--) {
