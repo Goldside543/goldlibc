@@ -5,7 +5,7 @@ AS      := as
 AR      := ar
 CFLAGS  := -Iinclude -ffreestanding -fno-stack-protector
 
-LIBC_DIRS := stdlib string unistd
+LIBC_DIRS := stdlib string unistd stdio
 
 LIBC_SRCS := $(foreach d,$(LIBC_DIRS),$(wildcard $(d)/*.c))
 LIBC_OBJS := $(LIBC_SRCS:.c=.o)
